@@ -1,6 +1,7 @@
 .todos-list {}
 
 .todos-list_item {
+    display: flex;
 	padding: 16px;
 	max-height: 50px;
 }
@@ -35,7 +36,8 @@
 	background-color: rgba(243, 231, 231, 0.459);
 }
 
-.todos-list_item:hover .todos-list_item_remove {
+.todos-list_item:hover .todos-list_item_remove,
+.todos-list_item:focus .todos-list_item_remove{
 	visibility: visible;
 }
 

@@ -2,7 +2,9 @@
 	position: relative;
 }
 
-.todos-list_item_text {
+.todos-list_item_text {2
+    word-break: break-all;
+    line-height: 20px;
 	-webkit-appearance: none;
 	background: none;
 	outline: none;
@@ -11,9 +13,9 @@
 	resize: none;
 	cursor: pointer;
 	position: relative;
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 15px;
-	font-weight: 100;
+	font-weight: 300;
 	text-align: left;
 
 	padding-top: 10px;

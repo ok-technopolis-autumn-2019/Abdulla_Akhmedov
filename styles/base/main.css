@@ -3,6 +3,7 @@ body {
 }
 
 .main-layout {
+    min-width: 350px;
 	max-width: 550px;
 	margin: 0 auto;
 	padding: 0 16px 16px;

@@ -1,4 +1,5 @@
 .todos-toolbar {
+    font-family: 'Roboto', Arial, sans-serif;
 	padding: 10px;
 }
 
@@ -14,7 +15,7 @@
 	padding: 5px;
 }
 
-.filters-checkbox:checked.~filters-label {
+.filters-checkbox:checked ~.filters-label {
 	background: -webkit-linear-gradient( #ffffff 0%, #e7eaec 100%);
 	border: 1px solid black;
 	border-radius: 5%;
