@@ -19,92 +19,107 @@
     <div class="todo-board">
 
         <form class="todo-creator">
-            <input type="button" class="todo-creator_check-all" aria-label="Check all items are done"/>
-            <div class="todo-creator_text-input-w">
-                <input class="todo-creator_text-input" type="text" placeholder="New todo name"
+            <input type="button" class="todo-creator__check-all" aria-label="Check all items are done"/>
+            <div class="todo-creator__text-input-w">
+                <input class="todo-creator__text-input" type="text" placeholder="New todo name"
                        aria-label="Input new todo text"/>
             </div>
         </form>
 
         <div class="todos-list">
-            <div class="todos-list_item">
-                <div class="custom-checkbox todos-list_item_ready-marker">
-                    <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
-                    <div class="custom-checkbox_visual">
-                        <div class="custom-checkbox_visual_icon"></div>
+            <div class="todos-list__item">
+                <div class="custom-checkbox todos-list__item__ready-marker">
+                    <input type="checkbox" class="custom-checkbox__target" aria-label="Mark todo as ready"/>
+                    <div class="custom-checkbox__visual">
+                        <div class="custom-checkbox__visual__icon"></div>
                     </div>
                 </div>
 
-                <button class="todos-list_item_remove" aria-label="Delete todo"></button>
+                <button class="todos-list__item__remove" aria-label="Delete todo"></button>
 
-                <div class="todos-list_item_text-w">
-                    <textarea readonly class="todos-list_item_text">HTML</textarea>
+                <div class="todos-list__item__text-w">
+                    <textarea readonly class="todos-list__item__text">HTML</textarea>
                 </div>
             </div>
-            <div class="todos-list_item __completed">
-                <div class="custom-checkbox todos-list_item_ready-marker">
-                    <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
-                    <div class="custom-checkbox_visual">
-                        <div class="custom-checkbox_visual_icon"></div>
+
+            <div class="todos-list__item __completed">
+                <div class="custom-checkbox todos-list__item__ready-marker">
+                    <input type="checkbox" class="custom-checkbox__target" aria-label="Mark todo as ready"/>
+                    <div class="custom-checkbox__visual">
+                        <div class="custom-checkbox__visual__icon"></div>
                     </div>
                 </div>
 
-                <button class="todos-list_item_remove" aria-label="Delete todo"></button>
+                <button class="todos-list__item__remove" aria-label="Delete todo"></button>
 
-                <div class="todos-list_item_text-w">
-                    <textarea readonly class="todos-list_item_text">CSSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaffff465657575124</textarea>
+                <div class="todos-list__item__text-w">
+                    <textarea readonly class="todos-list__item__text">CSS</textarea>
                 </div>
             </div>
-            <div class="todos-list_item">
-                <div class="custom-checkbox todos-list_item_ready-marker">
-                    <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
-                    <div class="custom-checkbox_visual">
-                        <div class="custom-checkbox_visual_icon"></div>
+
+            <div class="todos-list__item">
+                <div class="custom-checkbox todos-list__item__ready-marker">
+                    <input type="checkbox" class="custom-checkbox__target" aria-label="Mark todo as ready"/>
+                    <div class="custom-checkbox__visual">
+                        <div class="custom-checkbox__visual__icon"></div>
                     </div>
                 </div>
 
-                <button class="todos-list_item_remove" aria-label="Delete todo"></button>
+                <button class="todos-list__item__remove" aria-label="Delete todo"></button>
 
-                <div class="todos-list_item_text-w">
-                    <textarea readonly class="todos-list_item_text">JS</textarea>
+                <div class="todos-list__item__text-w">
+                    <textarea readonly class="todos-list__item__text">JS</textarea>
                 </div>
             </div>
-            <div class="todos-list_item">
-                <div class="custom-checkbox todos-list_item_ready-marker">
-                    <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
-                    <div class="custom-checkbox_visual">
-                        <div class="custom-checkbox_visual_icon"></div>
+
+            <div class="todos-list__item">
+                <div class="custom-checkbox todos-list__item__ready-marker">
+                    <input type="checkbox" class="custom-checkbox__target" aria-label="Mark todo as ready"/>
+                    <div class="custom-checkbox__visual">
+                        <div class="custom-checkbox__visual__icon"></div>
                     </div>
                 </div>
 
-                <button class="todos-list_item_remove" aria-label="Delete todo"></button>
+                <button class="todos-list__item__remove" aria-label="Delete todo"></button>
 
-                <div class="todos-list_item_text-w">
-                    <textarea readonly class="todos-list_item_text">JS Tools</textarea>
+                <div class="todos-list__item__text-w">
+                    <textarea readonly class="todos-list__item__text">JS Tools</textarea>
                 </div>
             </div>
         </div>
 
         <div class="todos-toolbar">
-            <div class="todos-toolbar_unready-counter">3 items left</div>
+            <div class="toolbar__item">
+                <div class="toolbar__item-counter">3 items left</div>
+            </div>
+    
+            <div class="toolbar__item">
+                <div class="toolbar__item-filter" role="group" aria-label="Filter by status">
 
-            <span class="todos-toolbar_filters">
-                    <span class="filters-item" aria-label="Filter: All, is selected">
-                        <input type="checkbox" id="filter1" class="filters-checkbox"/>
-                        <label for="filter1" class="filters-label">All</label>
-                    </span>
-                    <span class="filters-item" aria-label="Filter: Active">
-                        <input type="checkbox" id="filter2" class="filters-checkbox"/>
-                        <label for="filter2" class="filters-label">Active</label>
-                    </span>
+                    <label class="item-filter__item">
+                        <input type="radio" class="item-filter__input" name="filter" checked="checked" value="all"/>
+                        <span class="item-filter__text" aria-label="Select all">All</span>
+                    </label>
 
-                    <span class="filters-item" aria-label="Filter: Completed">
-                        <input type="checkbox" id="filter3" class="filters-checkbox"/>
-                        <label for="filter3" class="filters-label">Completed</label>
-                    </span>
-                </span>
-            <button class="todos-toolbar_clear-completed">Clear completed</button>
+                    <label class="item-filter__item">
+                        <input type="radio" class="item-filter__input" name="filter" value="active"/>
+                        <span class="item-filter__text" aria-label="Select all">Active</span>
+                    </label>
+
+                    <label class="item-filter__item">
+                        <input type="radio" class="item-filter__input" name="filter" value="completed"/>
+                        <span class="item-filter__text" aria-label="Select all">Completed</span>
+                    </label>
+                    
+                </div>
+            </div>
+    
+            <div class="toolbar__item">
+                <button class="toolbar__item-clear">Clear completed</button>
+            </div>
+        
         </div>
+            
     </div>
 </div>
 </body>

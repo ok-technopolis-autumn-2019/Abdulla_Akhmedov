@@ -27,11 +27,3 @@
     right: 4px;
     height: 4px;
 }
-
-.todo-board .todos-list, .todo-board .todos-toolbar {
-    display: none;
-}
-
-.todo-board .todos-list, .todo-board .todos-toolbar {
-    display: block;
-}

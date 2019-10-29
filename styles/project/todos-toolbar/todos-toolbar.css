@@ -1,44 +1,48 @@
 .todos-toolbar {
-    font-family: 'Roboto', Arial, sans-serif;
-	padding: 10px;
+  position: sticky;
+  display: flex;
+  bottom: 0;
+  justify-content: space-between;
+  padding: 10px;
+  white-space: nowrap;
 }
 
-.filters-checkbox {
-	background: none;
-	border: none;
-	padding: 0px;
-	visibility: hidden;
+.toolbar__item,
+.toolbar__item-clear {
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  align-items: center;
 }
 
-.filters-label {
-	cursor: pointer;
-	padding: 5px;
+.toolbar__item-clear {
+  background: #FFFFFF;
+  border: none;
 }
 
-.filters-checkbox:checked ~.filters-label {
-	background: -webkit-linear-gradient( #ffffff 0%, #e7eaec 100%);
-	border: 1px solid black;
-	border-radius: 5%;
+.item-filter__input:checked + .item-filter__text {
+   border: 1px solid #ebdfdf;
+    border-radius: 5px;
+    padding: 4px;
 }
 
-.todos-toolbar_unready-counter {
-	float: left;
-	width: 25%;
+.item-filter__input:focus + .item-filter__text {
+   border: 2px solid #cccccc;
+    border-radius: 5px;
+    padding: 3px;
 }
 
-.todos-toolbar_clear-completed {
-	float: right;
-	width: 25%;
+.item-filter__input {
+      opacity: 0;
+      position: absolute;
+      left: -1000000000px;
 }
 
-.todos-toolbar_filters {
-	width: 40%;
-  	position: relative;
+.item-filter__item {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid transparent 1px;
 }
-
-.todos-toolbar button {
-	background: none;
-	outline: none;
-	border: none;
-}
-

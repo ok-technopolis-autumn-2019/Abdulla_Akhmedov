@@ -1,4 +1,4 @@
-.todos-list_item_remove {
+.todos-list__item__remove {
 	  background: none;
 	  border: none;
 	  position: absolute;
@@ -7,8 +7,7 @@
 	  height: 18px;
 	  margin: 8px;
 	  cursor: pointer;
-	  background: url(../../../images/close.png);
+	  background: url(../../../images/close.svg);
 }
 
-.todos-list_item_remove:hover {}
-
+.todos-list__item__remove:hover {}

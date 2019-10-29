@@ -8,30 +8,28 @@
 	clear: both;
 }
 
-.todo-creator_check-all {
+.todo-creator__check-all {
 	float: left;
 	margin-right: 16px;
 	margin-top: 11px;
 	padding: 0;
-	width: 24px;
-	height: 12px;
+	width: 30px;
+	height: 20px;
 	border: none;
 	outline: none;
-	background: url(../../../images/select-all.png) no-repeat 0 0;
+	background: url(../../../images/select-all.svg) no-repeat 0 0;
 	cursor: pointer;
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), (min-resolution: 1.5dppx) {
-	.todo-creator_check-all {
-	    background: url(../../../images/select-all.png) no-repeat 0 0;
-	}
+.todo-creator__check-all {
+    background: url(../../../images/select-all.svg) no-repeat 0 0;
 }
 
-.todo-creator_text-input-w {
+.todo-creator__text-input-w {
 	overflow: hidden;
 }
 
-.todo-creator_text-input {
+.todo-creator__text-input {
 	border-color: transparent;
 	background: none;
 	width: 100%;
@@ -40,23 +38,14 @@
 	font-weight: 300;
 }
 
-.todo-creator_text-input::-webkit-input-placeholder {
+.todo-creator__text-input::placeholder {
 	font-style: italic;
+	font-weight: 300;
 	color: #ccc;
 }
 
-.todo-creator_text-input:-moz-placeholder {
-	font-style: italic;
-	color: #ccc;
-}
-
-.todo-creator_text-input::-moz-placeholder {
-	font-style: italic;
-	color: #ccc;
-}
-
-.todo-creator_text-input:-ms-input-placeholder {
-	font-style: italic;
-	color: #ccc;
+.todo-creator__text-input {
+	font-style: norm;
+	font-weight: 400;
 }
 
