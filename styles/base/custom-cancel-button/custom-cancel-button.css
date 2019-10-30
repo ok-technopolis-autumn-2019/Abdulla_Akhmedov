@@ -1,4 +1,4 @@
-.todos-list__item__remove {
+.todos-list__item-remove {
 	  background: none;
 	  border: none;
 	  position: absolute;
@@ -10,4 +10,4 @@
 	  background: url(../../../images/close.svg);
 }
 
-.todos-list__item__remove:hover {}
+.todos-list__item-remove:hover {}

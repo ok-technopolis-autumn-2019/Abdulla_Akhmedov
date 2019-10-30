@@ -11,43 +11,43 @@
 }
 
 
-.todos-list__item__ready-marker {
+.todos-list__item-ready-marker {
 	float: left;
 	margin-right: 16px;
 }
 
-.todos-list__item__text-w {
+.todos-list__item-text-w {
 	overflow: hidden;
 }
 
-.todos-list__item__text{
+.todos-list__item-text{
 	width: 100%;
 }
 
-.todos-list__item__remove {
+.todos-list__item-remove {
 	float: right;
 	margin-left: 16px;
-	visibility: hidden;
+	opacity: 0;
 }
 
 .todos-list__item:hover {
 	background-color: rgba(243, 231, 231, 0.459);
 }
 
-.todos-list__item:hover .todos-list__item__remove,
-.todos-list__item:focus .todos-list__item__remove{
-	visibility: visible;
+.todos-list__item:hover .todos-list__item-remove,
+.todos-list__item-remove:focus {
+	opacity: 1;
 }
 
-.todos-list__item.__completed .todos-list__item__text {
+.todos-list__item-completed .todos-list__item-text {
 	text-decoration-line: line-through;
 	color: gray;
 }
-.todos-list__item.__completed .custom-checkbox__visual {
+.todos-list__item-completed .custom-checkbox__visual {
 	border-color: #5bc3ca;
 }
 
-.todos-list__item.__completed .custom-checkbox__visual .custom-checkbox__visual__icon {
+.todos-list__item-completed .custom-checkbox__visual .custom-checkbox__visual-icon {
 	width: 20px;
 	height: 20px;
 	position: absolute;
@@ -56,4 +56,3 @@
 	margin: -10px;
 	background: url(../../../images/completed.svg);
 }
-

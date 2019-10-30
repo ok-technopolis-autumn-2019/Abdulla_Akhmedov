@@ -24,21 +24,21 @@
 }
 
 .item-filter__input:checked + .item-filter__text {
-   border: 1px solid #ebdfdf;
-    border-radius: 5px;
-    padding: 4px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 .item-filter__input:focus + .item-filter__text {
-   border: 2px solid #cccccc;
-    border-radius: 5px;
-    padding: 3px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 .item-filter__input {
-      opacity: 0;
-      position: absolute;
-      left: -1000000000px;
+  opacity: 0;
+  position: absolute;
+  left: -21102000px;
 }
 
 .item-filter__item {
