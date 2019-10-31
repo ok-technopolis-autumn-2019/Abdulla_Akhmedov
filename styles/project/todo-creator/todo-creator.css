@@ -16,7 +16,6 @@
 	width: 30px;
 	height: 20px;
 	border: none;
-	outline: none;
 	background: url(../../../images/select-all.svg) no-repeat 0 0;
 	cursor: pointer;
 }
@@ -33,6 +32,7 @@
 	border-color: transparent;
 	background: none;
 	width: 100%;
+	box-sizing: border-box;
 	font-size: 24px;
 	color: #666;
 	font-weight: 300;
@@ -45,6 +45,6 @@
 }
 
 .todo-creator__text-input {
-	font-style: norm;
+	font-style: normal;
 	font-weight: 400;
 }

@@ -24,9 +24,7 @@
 }
 
 .item-filter__input:checked + .item-filter__text {
-  border: 2px solid #cccccc;
-  border-radius: 5px;
-  padding: 3px;
+  border: 2px transparent solid;
 }
 
 .item-filter__input:focus + .item-filter__text {
