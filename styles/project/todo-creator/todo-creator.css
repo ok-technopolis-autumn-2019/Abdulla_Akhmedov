@@ -1,0 +1,50 @@
+.todo-creator {
+	padding: 16px 16px;
+}
+
+.todo-creator:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.todo-creator__check-all {
+	float: left;
+	margin-right: 16px;
+	margin-top: 11px;
+	padding: 0;
+	width: 30px;
+	height: 20px;
+	border: none;
+	background: url(../../../images/select-all.svg) no-repeat 0 0;
+	cursor: pointer;
+}
+
+.todo-creator__check-all {
+    background: url(../../../images/select-all.svg) no-repeat 0 0;
+}
+
+.todo-creator__text-input-w {
+	overflow: hidden;
+}
+
+.todo-creator__text-input {
+	border-color: transparent;
+	background: none;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 24px;
+	color: #666;
+	font-weight: 300;
+}
+
+.todo-creator__text-input::placeholder {
+	font-style: italic;
+	font-weight: 300;
+	color: #ccc;
+}
+
+.todo-creator__text-input {
+	font-style: normal;
+	font-weight: 400;
+}

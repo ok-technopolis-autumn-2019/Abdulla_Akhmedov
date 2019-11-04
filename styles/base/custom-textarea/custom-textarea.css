@@ -1,0 +1,20 @@
+.todos-list__item-text-w {
+	position: relative;
+}
+
+.todos-list__item-text {
+    font-family: 'Roboto', Arial, sans-serif;
+    word-break: break-word;
+    line-height: 20px;
+	-webkit-appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+	overflow: hidden;
+	resize: none;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: left;
+	padding-top: 10px;
+}
